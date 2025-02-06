@@ -56,15 +56,13 @@ public class Employee {
     public void setSalary(double salary) {
         this.salary = salary;
     }
-     public void compareBySalary(Employee employee1, Employee employee2) {
-        if (employee1.getSalary() > employee2.getSalary()) {
-            System.out.println(employee1);
-        }
-        else {System.out.println(employee2);}
+
+    public static int compareBySalary(Employee employee1, Employee employee2) {
+        return Double.compare(employee1.getSalary(), employee2.getSalary());
      }
 
     @Override
     public String toString() {
-        return String.format("%-20d|%-20s|%-20s|%-20s|%-20.2f %n", id, first_name, last_name, position, salary);
+        return String.format("|%-20d|%-20s|%-20s|%-20s|%-20.2f| %n", id, first_name, last_name, position, salary);
     }
 }
