@@ -14,7 +14,7 @@ public class project_UI {
                             
                             3. Delete an Employee
                             
-                            4. Display the Employee List
+                            4. Display the Employees List
                             
                             5. Search for an Employee
                             

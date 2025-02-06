@@ -18,7 +18,7 @@ public class Employee_Management {
         while(i <number_of_Employees_to_add){
             System.out.printf("-----Employee %d----\n",(i+1));
 
-            System.out.println("Add Employee Id"); .
+            System.out.println("Add Employee Id");
             int Id = clavier.nextInt();
 
             System.out.println("Add Employee First Name");
@@ -136,7 +136,7 @@ public class Employee_Management {
         }
     }
 
-    void Display_Employee_list() {
+    void Display_Employees_list() {
         System.out.println("Product List");
         System.out.printf("|%-20s|%-20s|%-20s|%-20s|%-20s|%n","Id","First Name","Last Name","Position","Salary");
         for (int i = 0; i < increment_employee; i++){
